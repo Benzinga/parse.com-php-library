@@ -20,11 +20,8 @@ class parseRestClient{
 	public $requestUrl = '';
 	public $returnData = '';
 
-    /**
-     * @param $parseConfig Object containing Parse.com API info.
-     */
-    public function __construct($parseConfig){
-
+	public function __construct(){
+		$parseConfig = new parseConfig;
 		$this->_appid = $parseConfig::APPID;
     	$this->_masterkey = $parseConfig::MASTERKEY;
     	$this->_restkey = $parseConfig::RESTKEY;
