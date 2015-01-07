@@ -5,7 +5,7 @@ class parsePush extends parseRestClient{
 	public $channels;
 	public $channel;
 	public $expiration_time;
-	public $expiration_time_intreval;
+	public $expiration_interval;
 	public $content_available;
 	public $type;
 	public $title;
