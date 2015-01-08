@@ -65,7 +65,7 @@ class parsePush extends parseRestClient{
 				if(!empty($this->expiration_time)){
 					$params['data']['expiration_time'] = $this->expiration_time;
 				}
-				if(!empty($this->expiration_time_interval)){
+				if(!empty($this->expiration_interval)){
 					$params['data']['expiration_interval'] = $this->expiration_interval;
 				}
 				if(!empty($this->content_available)){
@@ -90,4 +90,3 @@ class parsePush extends parseRestClient{
 	}
 }
 
-?>
